@@ -1,11 +1,15 @@
 const express = require("express")
 const app = express()
+// const morgan = require("morgan")
 const cors = require("cors")
+const allRoutes = require('./routes/allRoutes')
 
-app.use(cors('http://localhost:3000'))
 
+// app.use(morgan('tiny'))
+app.use(cors())
 app.use(express.json())
-app.use(bodyparser.urlencoded({ extended: true }))
+
+app.use('/', allRoutes)
 
 
 const port = 5000

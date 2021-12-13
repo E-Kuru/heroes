@@ -1,0 +1,33 @@
+.allHeroes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroe {
+  text-align: center;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #cccc;
+  margin-top: 2%;
+}
+
+.heroe img {
+  height: 150px;
+  width: auto;
+}
+
+.heroe button {
+  height: 45px;
+  width: 6%;
+}
